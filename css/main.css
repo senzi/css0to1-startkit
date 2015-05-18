@@ -1,27 +1,35 @@
 body {
-  background-image: url(../img/bg5.jpg);
+  background-image: url(https://unsplash.it/1920/1200/?image=494);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
 .container {
   width: 960px;
-  margin: 200px auto;
+  margin: 200px auto 500px auto;
+  background-color: #666;
 }
 .main-header {
-  background-image: url(../img/banner.jpg);
+  background-image: url(https://unsplash.it/1000/240/?image=307);
   padding: 1px;
 }
 .main-header__avatar {
+  background-image: url(../img/av1.jpg);
+  width: 130px;
+  height: 130px;
   display: block;
   margin: 0 auto;
-  margin-top: -70px;
-  margin-bottom: 10px;
+  margin-top: -60px;
+  margin-bottom: 1px;
   border: 3px solid white;
   border-radius: 999px;
   box-shadow: 0 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+.main-header__avatar:hover {
+  background-image: url(../img/av2.jpg);
+}
 .main-header h1 {
+  color: white;
   font-weight: 300;
   font-size: 50px;
   font-family: 'Open Sans', 'helvetica', arial, sans-serif;
