@@ -15,9 +15,9 @@ body {
 }
 .main-header__avatar {
   background-image: url(../img/av1.jpg);
+  display: block;
   width: 130px;
   height: 130px;
-  display: block;
   margin: 0 auto;
   margin-top: -60px;
   margin-bottom: 1px;
@@ -29,11 +29,11 @@ body {
   background-image: url(../img/av2.jpg);
 }
 .main-header h1 {
+  margin: 5px auto;
+  text-align: center;
   color: white;
-  font-weight: 300;
   font-size: 50px;
+  font-weight: 300;
   font-family: 'Open Sans', 'helvetica', arial, sans-serif;
   text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  margin: 5px auto;
 }
