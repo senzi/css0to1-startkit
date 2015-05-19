@@ -66,6 +66,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   ul li{
+  	width: 80px;
   	margin: 15px 10px;
   	display: inline-block;
   }
@@ -112,27 +113,22 @@ h1, h2, h3, h4, h5, h6 {
   	}
   	.whatido__skill{
   		@skill_hight : 120px;
+  		@skill_width : 33.3333333%;
   		float: left;	
 	  	padding-top: @skill_hight;
 	  	background-repeat: no-repeat;
 	  	background-position: center top;
   		&--code {
-  			width: 33%;
+  			width: @skill_width;
 	  		background-image: url(../img/skill-code.png);
 		}
 		&--design {
-			width: 33%;
+			width: @skill_width;
 	  		background-image: url(../img/skill-design.png);
 		}
 		&--product {
-			width: 33%;
+			width: @skill_width;
 	  		background-image: url(../img/skill-product.png);
 		}
   	}
-}
-
-.clearfix:after {
-  content:"";
-  display:table;
-  clear:both;
 }

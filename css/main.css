@@ -60,6 +60,7 @@ h6 {
   margin-top: 0px;
 }
 .main-nav ul li {
+  width: 80px;
   margin: 15px 10px;
   display: inline-block;
 }
@@ -110,19 +111,14 @@ h6 {
   background-position: center top;
 }
 .info-section .whatido__skill--code {
-  width: 33%;
+  width: 33.3333333%;
   background-image: url(../img/skill-code.png);
 }
 .info-section .whatido__skill--design {
-  width: 33%;
+  width: 33.3333333%;
   background-image: url(../img/skill-design.png);
 }
 .info-section .whatido__skill--product {
-  width: 33%;
+  width: 33.3333333%;
   background-image: url(../img/skill-product.png);
-}
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
 }
