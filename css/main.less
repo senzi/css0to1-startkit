@@ -1,4 +1,48 @@
-@avatar_wh:130px; 
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+	margin:-40 auto;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 130px;
+	height: 130px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
 
 body{
 	background-image: url(https://unsplash.it/1920/1200/?image=494);
@@ -27,21 +71,33 @@ h1, h2, h3, h4, h5, h6 {
 	background-image: url(https://unsplash.it/1000/240/?image=307);
 	padding: 1px;
 	&__avatar{
+		@avatar_wh:130px; 
 		background-image: url(../img/av1.jpg);
 		display: block;
 		width: @avatar_wh;
 		height: @avatar_wh;
 		margin: 0 auto;
-		margin-top: -60px;
+		margin-top: -40px;
 		margin-bottom: 1px;
 		border: 3px solid white;
 
 		border-radius: 999px;
 		box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
-		&:hover{
-			background-image: url(../img/av2.jpg);
-		}
 	}
+	&__avatar__back{
+		@avatar_wh:130px; 
+		background-image: url(../img/av2.jpg);
+		display: block;
+		width: @avatar_wh;
+		height: @avatar_wh;
+		margin: 0 auto;
+		margin-top: -30px;
+		margin-bottom: 1px;
+		border: 3px solid white;
+
+		border-radius: 999px;
+		box-shadow: 0 0px 2px 1px rgba(0,0,0,0.2);
+	}	
 
 	h1{
 		margin: 5px auto;
@@ -56,7 +112,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-nav {
   text-align: center;
-  background-color: #3CB371;
+  background-color: #696969;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -132,3 +188,12 @@ h1, h2, h3, h4, h5, h6 {
 		}
   	}
 }
+
+.clearfix:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+
+

@@ -33,16 +33,25 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
 
     <div class="container">
       <header class="main-header">
-        <a class="main-header__avatar"></a>
-        <h1>I'm sennes</h1>
+	  <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+		<div class="flipper">
+			<div class="front">
+				<a class="main-header__avatar"></a>
+			</div>
+			<div class="back">
+				<a class="main-header__avatar__back"></a>
+			</div>
+		</div>
+	  </div>
+        <h1>たちばなかれん</h1>
       </header>
 
       <nav class="main-nav">
         <ul>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Photos</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">仕事</a></li>
+          <li><a href="#">経験</a></li>
+          <li><a href="#">写真</a></li>
+          <li><a href="#">連絡</a></li>
         </ul>
       </nav>
 
@@ -66,7 +75,6 @@ See: http://www.sitepoint.com/web-foundations/doctypes/
           </li>
         </ul>
       </section>
-      <p>测试clearfix有没有成功</p>
       <section class="info-section education-experience">
         <header>
           <h2>Education &amp; Experience</h2>
