@@ -67,7 +67,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-header{
-
 	background-image: url(https://unsplash.it/1000/240/?image=307);
 	padding: 1px;
 	&__avatar{
@@ -78,7 +77,6 @@ h1, h2, h3, h4, h5, h6 {
 		height: @avatar_wh;
 		margin: 0 auto;
 		margin-top: -40px;
-		margin-bottom: 1px;
 		border: 3px solid white;
 
 		border-radius: 999px;
@@ -114,13 +112,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   background-color: #F39772;
   list-style: none;
-  padding: 0;
+  padding: 1px;
   margin: 0;
-
   ul{
-  	margin-top: 0px;
+  	margin: 0 auto;
   }
-
   ul li{
   	width: 80px;
   	margin: 15px 10px;
@@ -138,12 +134,19 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.whatido {
+    height: 360px;
+}
+
+.education-experience{
+	height: 750px;
+}
+
 .info-section {
-  	text-align: center;
 	padding: 20px 60px;
-	margin-top: -20px;
   	background-color: #fff;
   	& header h2 {
+  		text-align: center;
 		font-size: 28px;
 		letter-spacing: 3px;
 		text-transform: uppercase;
@@ -157,9 +160,11 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 	&__description{
+		text-align: center;
 		font-style: italic;
 	}
   	.whatido__skill-list{
+  		text-align: center;
   		padding: 0;
   		margin: 0;
   		list-style: none;
@@ -204,6 +209,9 @@ h1, h2, h3, h4, h5, h6 {
 			width: 180px;
 			height: 180px;
 		}
+		.imgright{
+			float: right;
+		}
 	}
 	.content{ 
 		text-align: justify;
@@ -224,4 +232,80 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.photos{
+	.photos__list{
+		overflow: hidden;
+		width: 640px;
+        margin: 0 auto;
+        margin-top: 50px;
+		li{
+			box-sizing: border-box;
+        	float: left;
+        	padding: 10px;
+        	width: 33.3333%;
+        	img{
+        		width: 100%;
+        	}
+		}
+	}
+
+}
+
+.get-in-touch{
+	.get-in-touch__list{
+		overflow: hidden;
+		width: 640px;
+        margin: 0 auto;
+        margin-top: 50px;
+        li{
+			box-sizing: border-box;
+        	float: left;
+        	padding: 20px;
+        	width: 25%;
+        	img{
+        		width: 100%;
+        	}
+		}
+	}
+}
+
+
+.contact{
+	input,textarea{
+		border: 1px solid #ccc;
+  		border-radius: 4px;
+	}
+	button{
+		height: 60px;
+		border: none;
+		border-radius: 9999px;
+
+		background: #ffd524;
+
+		cursor: pointer;
+		text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+		color: #fff;
+		box-shadow: 0 3px 0 #daae1d;
+	}
+	form{
+		text-align: justify;
+		position: relative;
+		width: 40%;
+		margin: 0 auto;
+		label,input,textarea,button{
+			margin-bottom: 8px;
+			width: 100%;
+		}
+		.smallbox{
+			position: relative;
+			label{
+				text-align: right;
+				position: absolute;
+				top: 0;
+				left: -102%;
+				width: 100%;
+			}
+		}
+	}
+}
 
